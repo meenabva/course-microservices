@@ -38,8 +38,8 @@ public class WebSecurityConfig {
       .logout().permitAll()
       .logoutRequestMatcher(new AntPathRequestMatcher("/service/logout", "POST"))
       .and()
-      .formLogin().loginPage("/service/login")
-          .and()
+      //.formLogin().loginPage("/service/login")
+        //  .and()
           .httpBasic()
           .and()
           .csrf().disable();

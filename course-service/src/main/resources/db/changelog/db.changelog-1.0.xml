@@ -40,11 +40,11 @@
   </changeSet>
   <changeSet id="3" author="m">
   	<sql>
-  		INSERT INTO course (title, author, category, publish_date) VALUES('Microservices', 'Instructor 1', 'Programming', NOW());
-            INSERT INTO course (title, author, category, publish_date) VALUES('Java Programming', 'Instructor 2', 'Programming', NOW());
-            INSERT INTO course (title, author, category, publish_date) VALUES('Web Development', 'Instructor 3', 'Web', NOW());
-            INSERT INTO course (title, author, category, publish_date) VALUES('Mobile Application', 'Instructor 4', 'Mobile', NOW());
-            INSERT INTO course (title, author, category, publish_date) VALUES('Amazon Web Services', 'Instructor 5', 'Administration', NOW());
+  		INSERT INTO course (title, author, category, published_date) VALUES('Microservices', 'Instructor 1', 'Programming', NOW());
+            INSERT INTO course (title, author, category, published_date) VALUES('Java Programming', 'Instructor 2', 'Programming', NOW());
+            INSERT INTO course (title, author, category, published_date) VALUES('Web Development', 'Instructor 3', 'Web', NOW());
+            INSERT INTO course (title, author, category, published_date) VALUES('Mobile Application', 'Instructor 4', 'Mobile', NOW());
+            INSERT INTO course (title, author, category, published_date) VALUES('Amazon Web Services', 'Instructor 5', 'Administration', NOW());
         </sql>
         <rollback>
             TRUNCATE TABLE course;

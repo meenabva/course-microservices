@@ -49,7 +49,7 @@ public class UserController {
 	}
 
 	@PostMapping("/service/registration")
-	public ResponseEntity<?> saveUser(User user){
+	public ResponseEntity<?> saveUser(@RequestBody User user){
 		if(userService.findByUsername(user.getUsername()) != null) {
 			//status code: 409
 			return new ResponseEntity<>(HttpStatus.CONFLICT);
